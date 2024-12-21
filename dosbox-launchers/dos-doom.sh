@@ -3,6 +3,6 @@
 echo "DOSBox"
 echo "Copyright DOSBox Team, published under GNU GPL."
 echo "---"
-
-dosbox -c 'mount c /opt/DOSC' -c 'C:' -c 'cd DOOM' -c 'C:\DOOM\DOOM.EXE %1 %2 %3 %4 %5 %6 %7 %8 %9' -c 'exit' -noconfig -noautoexec > /dev/null
+# 21/Dec/2024 - Changed DOOM.EXE to FDOOM.EXE, FastDoom runs better
+dosbox -c 'mount c /opt/DOSC' -c 'C:' -c 'cd DOOM' -c 'C:\DOOM\FDOOM.EXE %1 %2 %3 %4 %5 %6 %7 %8 %9' -c 'exit' -noconfig -noautoexec > /dev/null
 
